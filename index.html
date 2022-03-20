@@ -32,6 +32,21 @@
 
   gtag('config', 'AW-10861880556');
 </script>
+	  
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10861880556/i280CLrh-6oDEOzJrLso',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>	  
 
 <!-- TAG DO GOODLE -->
 
@@ -1032,6 +1047,7 @@
                           <div class="elementor-button-wrapper">
                             <a
                               href="https://go.hotmart.com/F68408221R?ap=a3be"
+			       onclick="gtag_report_conversion()"
                               class="
                                 elementor-button-link
                                 elementor-button
@@ -3325,6 +3341,7 @@
                           <div class="elementor-button-wrapper">
                             <a
                               href="https://go.hotmart.com/F68408221R?ap=a3be"
+			       onclick="gtag_report_conversion()"
                               class="
                                 elementor-button-link
                                 elementor-button
