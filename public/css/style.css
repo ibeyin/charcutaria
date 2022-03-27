@@ -371,6 +371,10 @@
     margin: 0;
 }
 
+.sir-bloco-paralax img {
+    width: 100%;
+}
+
 @media (max-width: 600px)
 {
     #sir-chamada .chamada .titulo,
@@ -404,6 +408,9 @@
     .sir-preco .acao { padding: 0 2.5vw; }
 
     .sir-certificado { padding: 70px 2.5vw; text-align: center; }
+
+    #sir-chamada .chamada .acao img,
+    .sir-preco img { height: 15px; }
 }
 
 @-webkit-keyframes pulse {
