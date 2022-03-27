@@ -1,0 +1,437 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    --principal: #FF6600;
+    --secundaria: #2BB56E;
+    --botaoacao: #FF6600;
+}
+
+#sir-chamada {
+    background: url("./../img/bacon.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    width: 100%;
+
+    color: white;
+    text-align: center;
+}
+
+#sir-chamada:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    background: 
+      linear-gradient(-45deg, transparent 70%, black 75% ), 
+      linear-gradient( 45deg, transparent 70%, black 75% );
+    background-repeat: repeat-x;
+    background-size: 25px 20px, 25px 20px;
+    background-position: center;
+    margin-top: -5px;
+}
+
+#sir-chamada .chamada {
+    padding-top: 15vh;
+}
+
+#sir-chamada .chamada .titulo,
+#sir-chamada .chamada .acao,
+#sir-chamada .chamada .player {
+    padding: 0 12.5vw;
+}
+
+#sir-chamada .chamada .titulo h1 { 
+    font-size: 28px;
+    font-family: "Montserrat", Sans-serif;
+}
+
+#sir-chamada .chamada .titulo h1 span {
+    color: var(--principal);
+    font-family: "Montserrat", Sans-serif;
+}
+
+#sir-chamada .chamada .titulo p { 
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#sir-chamada .chamada .titulo p span {
+    color: var(--secundaria);
+    font-weight: bold;
+}
+
+#sir-chamada .chamada .player iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#sir-chamada .chamada .acao {
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+#sir-chamada .chamada .acao p {
+    margin-top: 30px;
+    padding: 0;
+}
+
+#sir-chamada .chamada .acao img {
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+.sir-acao {
+    width: 100%;
+    background-color: var(--botaoacao);
+    color: white;   
+    border: none;
+    border-radius: 2.5px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px 1px var(--botaoacao);
+    transition: all .8s;
+
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    -ms-animation: pulse 1s ease infinite;
+    -o-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+}
+
+.sir-acao:hover {
+    transition: all .8s;
+    transform: scale(1.1);
+    -webkit-animation: "";
+    -moz-animation: "";
+    -ms-animation: "";
+    -o-animation:"";
+    animation: "";
+}
+
+.sir-bloco {
+    min-height: 200px;
+    width: 100%;
+    background: #f7f7f7;
+    background-image: linear-gradient(90deg, rgba(236, 236, 236, .5) 50%, transparent 0),
+                    linear-gradient(rgba(236, 236, 236, .5) 50%, transparent 0);
+    background-size: 26px 26px;
+}
+
+#sir-infocurso {
+    padding: 12.5vh 0;
+    text-align: center;
+}
+
+#sir-infocurso .col-12:nth-child(2) {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;   
+}
+
+#sir-infocurso .col-12:nth-child(2) h1,
+.sir-bloco-branco h1,
+.sir-bloco-paralax h1 {
+    font-size: 28px;
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+}
+
+#sir-infocurso .col-12:nth-child(2) span,
+.sir-bloco-branco span,
+.sir-bloco-paralax span {
+    color: var(--principal);
+    font-family: "Montserrat", Sans-serif;
+}
+
+.sir-bloco-branco hr,
+#sir-infocurso .col-12:nth-child(2) hr  {
+    width: 50px;
+    border: 3px solid var(--principal);
+}
+
+#sir-infocurso img {
+    max-width: 100%;
+}
+
+.sir-bloco-branco {
+    background-color: rgb(247, 247, 247);
+    min-height: 250px;
+    text-align: center;
+    padding: 75px 12.5vh;
+}
+
+.sir-bloco-branco hr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.sir-bloco-branco ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.sir-bloco-branco ul li {
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid #4A4A4A;
+    color: #4A4A4A;
+    font-family: "Montserrat", Sans-serif;
+    padding: 15px 5px;
+}
+
+.sir-bloco-branco .item .col-12:nth-child(1) {
+    padding-left: 12.5vw;
+}
+
+.sir-bloco-branco .item .col-12:nth-child(2) {
+    padding-right: 12.5vw;
+}
+
+.sir-bloco-branco .subtitulo { 
+    font-family: "Montserrat", Sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.sir-bloco-paralax {
+  background-image: url("./../img/bacon.jpg");
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+  padding: 75px 12.5vw;
+}
+
+.sir-bloco-paralax h1,
+.sir-bloco-paralax p {
+    color: white;
+}
+
+.sir-bloco-paralax hr {
+    width: 50px;
+    border: 3px solid white;
+    margin: auto;
+}
+
+.sir-bloco-paralax .col-12 {
+    padding: 30px 25px;
+}
+
+.sir-bonus {
+    background-color: white;
+    border-left: 7.5px solid var(--secundaria);
+    border-right: 7.5px solid var(--secundaria);
+    min-height: 150px;
+    text-align: left;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 15px;
+}
+
+.sir-bonus h2 {
+    font-size: 20px;
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+}
+
+.sir-bonus p { 
+    color: #4A4A4A;
+}
+
+.sir-preco .acao {
+    padding: 0 12vw;
+    padding-top: 30px;
+}
+
+.sir-preco .acao p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sir-preco p {
+    font-size: 20px;
+}
+
+.sir-preco h2 {
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    color: var(--principal);
+}
+
+.sir-preco img {
+    height: 30px;
+}
+
+.sir-preco ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.sir-preco ul li {
+    color: white;
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.sir-preco ul li span { 
+    margin-right: 7.5px;
+    font-weight: bold;
+}
+
+.sir-preco-promo {
+    position: relative;
+}
+.sir-preco-promo:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 3px solid;
+    border-color: var(--botaoacao);
+    
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+
+.sir-certificado {
+    background-color: #e7e7e7;
+    padding: 70px 12vw;
+}
+
+.sir-certificado .col-12 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sir-certificado img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sir-certificado span { 
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    color: #ffbf00;
+}
+
+.sir-certificado h1 {
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #212529;
+}
+
+.sir-certificado hr {
+    width: 50px;
+    border: 3px solid #ffbf00;
+}
+
+.sir-cor2 {
+    background-color: white;
+}
+
+.sir-cor2 hr {
+    border-color: #ff2337;
+}
+
+.sir-cor2 span {
+    color: #ff2337;
+}
+
+.sir-cor2 img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sir-bloco-preto {
+    background-color: black;
+    color: rgb(163, 163, 163);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sir-bloco-preto p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 600px)
+{
+    #sir-chamada .chamada .titulo,
+    #sir-chamada .chamada .acao,
+    #sir-chamada .chamada .player {
+        padding: 0 2.5vw;
+    }
+
+    .sir-bloco-branco {
+        padding: 75px 2.5vw;
+    }
+
+    #sir-chamada .chamada { padding-top: 12.5vh; }
+
+    #sir-chamada .chamada .titulo h1 { font-size: 20px; }
+    #sir-chamada .chamada .titulo p { font-size: 15px; }
+
+    #sir-chamada .chamada .player iframe { height: 250px; }
+
+    .sir-bloco-branco .item .col-12:nth-child(1),
+    .sir-bloco-branco .item .col-12:nth-child(2) {
+        padding: 0 2.5vw;
+    } 
+
+    #sir-infocurso .col-12 { margin-bottom: 30px; }
+    #sir-infocurso .col-12:nth-child(2) { text-align: center; padding: 3.5vw; }
+    #sir-infocurso .col-12:nth-child(2) hr,
+    .sir-certificado hr { margin-left: auto; margin-right: auto; }
+
+    .sir-bloco-paralax { padding: 75px 2.5vw; }
+    .sir-preco .acao { padding: 0 2.5vw; }
+
+    .sir-certificado { padding: 70px 2.5vw; text-align: center; }
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    25% { -webkit-transform: scale(1.01); }
+    50% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }
+    25% { -moz-transform: scale(1.01); }
+    50% { -moz-transform: scale(1); }
+    100% { -moz-transform: scale(1); }
+}
+@-ms-keyframes pulse {
+    0% { -ms-transform: scale(1); }
+    25% { -ms-transform: scale(1.01); }
+    50% { -ms-transform: scale(1); }
+    100% { -ms-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }
+    25% { -o-transform: scale(1.01); }
+    50% { -o-transform: scale(1); }
+    100% { -o-transform: scale(1); } 
+}
+@keyframes pulse { 
+    0% {transform: scale(1);}
+    50% {transform: scale(1.01);}
+    100% {transform: scale(1);}
+}
